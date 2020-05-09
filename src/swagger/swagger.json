@@ -1,0 +1,48 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "Peppers"
+    },
+    "servers": [
+        {
+            "url": "https://api-url.com"
+        }
+    ],
+    "paths": {
+        "/peppers": {
+            "get": {
+                "summary": "List all peppers",
+                "tags": [
+                    "Pepper"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "An array peppers",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "example":     {
+                                            "id": 375,
+                                            "genus": "Annuum",
+                                            "heat": "Hot",
+                                            "origin": "Cuba",
+                                            "name": "BLACK CLUSTER (PI 267730)",
+                                            "1st image": "pi267730d.jpg",
+                                            "2nd image": "Black Clus Flow.jpg",
+                                            "description": "A plant with deep purple leaves and round, purple, upright pods which turn bright red when mature.",
+                                            "1st image credit": "© Dr R Jarret USDA ARS",
+                                            "2nd image credit": "© Mats & Patricia Pettersson"
+                                          }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
